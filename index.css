@@ -46,101 +46,81 @@
   display: contents;
 }
 
-.home-container1 {
+.home-container10 {
   width: 100%;
   display: block;
   min-height: 100vh;
 }
  
-.home-container2 {
+.home-container11 {
   display: none;
 }
  
-.home-container3 {
+.home-container12 {
   display: contents;
 }
  
-.home-thq-section-content-elm11 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm13 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm15 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm17 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm19 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm21 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm23 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm25 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm27 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm29 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm31 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm33 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm35 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm37 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm39 {
-  font-weight: 600;
-}
- 
-.home-thq-section-content-elm41 {
-  font-weight: 600;
-}
- 
-.home-container4 {
+.home-container13 {
   display: none;
 }
  
-.home-container5 {
+.home-container14 {
   display: contents;
 }
  
-.home-container6 {
+.home-container15 {
   display: none;
 }
  
-.home-container7 {
+.home-container16 {
   display: contents;
 }
  
-.home-container8 {
+.home-container17 {
+  display: none;
+}
+ 
+.home-container18 {
+  display: contents;
+}
+ 
+.home-thq-footer-content-elm {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+}
+ 
+.home-container19 {
+  display: none;
+}
+ 
+.home-container20 {
+  display: contents;
+}
+ 
+.home-container21 {
+  display: none;
+}
+ 
+.home-container22 {
+  display: contents;
+}
+ 
+.home-container23 {
+  display: none;
+}
+ 
+.home-container24 {
+  display: contents;
+}
+ 
+.home-container25 {
+  display: none;
+}
+ 
+.home-container26 {
+  display: contents;
+}
+ 
+.home-container27 {
   right: 50px;
   border: 1px solid #ffffff5c;
   bottom: 30px;
@@ -159,12 +139,12 @@
   background-color: rgba(41, 41, 41, 0.41);
 }
  
-.home-icon35 {
+.home-icon95 {
   width: 24px;
   margin-right: 4px;
 }
  
-.home-text26 {
+.home-text29 {
   color: white;
   font-size: 13px;
   font-style: normal;
