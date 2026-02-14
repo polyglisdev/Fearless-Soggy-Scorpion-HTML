@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://fearless-soggy-scorpion-zhpezs.teleporthq.app/sitemap.xml
