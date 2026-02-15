@@ -1,1805 +1,809 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>FAJAS DUCTESA</title>
-    <meta property="og:title" content="Fearless Soggy Scorpion" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Fajas Ductesa — Catálogo Oficial</title>
+<meta name="description" content="Fajas Ductesa: levanta cola, broche frontal. Alta compresión, resultados reales. Pedidos por WhatsApp."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+/* ════════════════════════════════════════════
+   VARIABLES
+════════════════════════════════════════════ */
+:root{
+  --f1:#ff0080; --f2:#ff4dab; --f3:#ff80c8;
+  --coral:#ff5a5a; --gold:#f5c842; --gold2:#ffe27a;
+  --plum:#420030; --plum2:#6b0050; --plum3:#9b1070;
+  --bg:#fff5fb; --bg2:#fff0f5; --white:#fff;
+  --wa:#25d366; --wa2:#128c4a;
+  --text:#2d001d; --muted:#9b6e84;
+  --r:16px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Raleway',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.65}
+img{display:block;max-width:100%;height:auto}
+a{text-decoration:none;color:inherit}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--f1);border-radius:99px}
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Montserrat;
-        font-size: 1rem;
-      }
+/* ════════════════════════════════════════════
+   BUTTONS
+════════════════════════════════════════════ */
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:var(--wa);color:#fff;font-family:'Raleway',sans-serif;font-weight:800;font-size:.88rem;letter-spacing:.05em;padding:14px 30px;border-radius:50px;border:none;cursor:pointer;white-space:nowrap;box-shadow:0 6px 24px rgba(37,211,102,.4);transition:all .25s}
+.btn-wa:hover{background:var(--wa2);transform:translateY(-3px);box-shadow:0 10px 32px rgba(37,211,102,.55)}
+.btn-hot{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--f1),var(--f2));color:#fff;font-family:'Raleway',sans-serif;font-weight:800;font-size:.9rem;letter-spacing:.06em;padding:14px 30px;border-radius:50px;border:none;cursor:pointer;white-space:nowrap;box-shadow:0 6px 28px rgba(255,0,128,.38);transition:all .25s}
+.btn-hot:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(255,0,128,.55)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;border:2px solid rgba(255,255,255,.65);font-family:'Raleway',sans-serif;font-weight:700;font-size:.84rem;letter-spacing:.1em;text-transform:uppercase;padding:12px 26px;border-radius:50px;cursor:pointer;transition:all .25s}
+.btn-ghost:hover{background:rgba(255,255,255,.14);border-color:#fff}
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: undefined;
-        text-transform: undefined;
-        letter-spacing: 0.02em;
-        line-height: 1.6;
-        color: var(--color-on-surface);
-        background: var(--color-surface);
+/* ════════════════════════════════════════════
+   NAVBAR
+════════════════════════════════════════════ */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:300;padding:0 24px;transition:background .4s,box-shadow .4s}
+.navbar.scrolled{background:rgba(255,245,251,.97);backdrop-filter:blur(16px);box-shadow:0 2px 20px rgba(255,0,128,.1)}
+.nav-inner{max-width:1160px;margin:0 auto;height:68px;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:10px}
+.nav-logo-ring{width:40px;height:40px;border-radius:50%;overflow:hidden;border:2.5px solid var(--f1);box-shadow:0 0 0 4px rgba(255,0,128,.1);flex-shrink:0}
+.nav-logo-ring img{width:100%;height:100%;object-fit:cover}
+.nav-name{font-family:'Great Vibes',cursive;font-size:1.55rem;color:var(--plum);line-height:1}
+.navbar.dark-mode .nav-name{color:#fff}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text);opacity:.7;transition:all .2s}
+.navbar.dark-mode .nav-links a{color:rgba(255,255,255,.8)}
+.nav-links a:hover{opacity:1;color:var(--f1)}
+.navbar.dark-mode .nav-links a:hover{color:var(--gold)}
+.nav-cta{display:flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--f1),var(--f2));color:#fff;padding:9px 18px;border-radius:50px;font-size:.76rem;font-weight:800;letter-spacing:.04em;box-shadow:0 4px 16px rgba(255,0,128,.3);transition:transform .2s,box-shadow .2s}
+.nav-cta:hover{transform:scale(1.04);box-shadow:0 6px 22px rgba(255,0,128,.48)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.nav-toggle span{width:24px;height:2.5px;background:var(--plum);border-radius:2px;display:block;transition:all .3s}
+.navbar.dark-mode .nav-toggle span{background:#fff}
 
-        fill: var(--color-on-surface);
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./index.css" rel="stylesheet" />
+/* ════════════════════════════════════════════
+   HERO
+════════════════════════════════════════════ */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(165deg,#1a0012 0%,var(--plum) 35%,var(--plum3) 70%,#d0226a 100%)}
+.hero-orb1{position:absolute;top:-150px;left:-100px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,80,180,.3),transparent 65%);pointer-events:none;animation:orbFloat 8s ease-in-out infinite}
+.hero-orb2{position:absolute;bottom:-120px;right:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(245,200,66,.2),transparent 65%);pointer-events:none;animation:orbFloat 10s ease-in-out infinite reverse}
+@keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(20px,-20px) scale(1.05)}}
+.hero-bgimg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/6320941/pexels-photo-6320941.jpeg?auto=compress&cs=tinysrgb&w=1400')center/cover no-repeat;opacity:.15;mix-blend-mode:luminosity}
+.hero-content{position:relative;z-index:2;text-align:center;padding:100px 24px 60px;display:flex;flex-direction:column;align-items:center;max-width:860px;margin:0 auto}
+.hero-logo-wrap{margin-bottom:22px}
+.hero-logo-ring{width:118px;height:118px;border-radius:50%;overflow:hidden;border:3.5px solid var(--gold);box-shadow:0 0 0 8px rgba(245,200,66,.14),0 0 0 18px rgba(245,200,66,.06),0 20px 70px rgba(0,0,0,.55);animation:logoAura 3.5s ease-in-out infinite;display:inline-block}
+.hero-logo-ring img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+@keyframes logoAura{0%,100%{box-shadow:0 0 0 8px rgba(245,200,66,.14),0 0 0 18px rgba(245,200,66,.06),0 20px 70px rgba(0,0,0,.55)}50%{box-shadow:0 0 0 14px rgba(245,200,66,.22),0 0 0 28px rgba(245,200,66,.1),0 24px 80px rgba(0,0,0,.55)}}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;font-size:.7rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.hero-badge::before,.hero-badge::after{content:'';width:50px;height:1px;background:linear-gradient(90deg,transparent,var(--gold));display:block}
+.hero-badge::after{background:linear-gradient(90deg,var(--gold),transparent)}
+/* BIG STORE NAME */
+.hero-storename{font-family:'Great Vibes',cursive;font-size:clamp(3.8rem,13vw,9.5rem);color:#fff;line-height:1;margin-bottom:8px;text-shadow:0 0 40px rgba(255,100,180,.7),0 0 100px rgba(255,0,128,.35);animation:nameGlow 4s ease-in-out infinite}
+@keyframes nameGlow{0%,100%{text-shadow:0 0 40px rgba(255,100,180,.7),0 0 100px rgba(255,0,128,.35)}50%{text-shadow:0 0 60px rgba(255,100,180,.95),0 0 140px rgba(255,0,128,.6),0 0 220px rgba(245,200,66,.2)}}
+.hero-sub{font-family:'Italiana',serif;font-size:clamp(.85rem,2.2vw,1.25rem);color:rgba(255,255,255,.65);letter-spacing:.38em;text-transform:uppercase;margin-bottom:18px}
+.hero-gems{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.hero-gem-line{flex:1;max-width:90px;height:1px;background:linear-gradient(90deg,transparent,rgba(245,200,66,.5))}
+.hero-gem-line.r{background:linear-gradient(90deg,rgba(245,200,66,.5),transparent)}
+.hero-gem{font-size:1rem;color:var(--gold)}
+.hero-tagline{font-size:.92rem;color:rgba(255,255,255,.6);margin-bottom:40px;font-weight:400;max-width:420px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.hero-scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(255,255,255,.3);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase}
+.hero-arrow{width:26px;height:26px;border-right:1.5px solid rgba(255,255,255,.25);border-bottom:1.5px solid rgba(255,255,255,.25);transform:rotate(45deg);animation:bounce 1.6s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(5px)}}
 
-      <div class="home-container10">
-        <navigation-wrapper class="navigation-wrapper">
-          <!--Navigation component-->
-          <div class="navigation-container1">
-            <div class="navigation-container2">
-              <div class="navigation-container3">
-                <style>
-                  @media (prefers-reduced-motion: reduce) {
-                  .navigation-mobile-overlay.is-active {
-                    animation: none;
-                  }
-                  .navigation-wrapper {
-                    transition: none;
-                  }
-                  }
-                </style>
-              </div>
-            </div>
-            <nav id="navigation-main" class="navigation-wrapper">
-              <div class="navigation-container">
-                <a href="index.html">
-                  <div aria-label="FajaBella Home" class="navigation-brand">
-                    <span class="section-title">FajaBella</span>
-                  </div>
-                </a>
-                <div class="navigation-desktop-menu">
-                  <ul class="navigation-links">
-                    <li>
-                      <a href="index.html">
-                        <div class="navigation-link"><span>Inicio</span></div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="navigation-link">
-                          <span>Colección</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="navigation-link">
-                          <span>Guía de Tallas</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="navigation-link">
-                          <span>Sobre Nosotros</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="navigation-actions">
-                    <a href="https://wa.me/your-number">
-                      <div class="btn-primary btn navigation-cta btn-sm">
-                        <svg
-                          fill="none"
-                          width="20"
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="20"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
-                          <path
-                            d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"
-                          ></path>
-                        </svg>
-                        <a href=https://wa.me/18097655525?text=Faja%20Ductesa " target="_blank" style="...">Pedir por WhatsApp</a>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <button
-                  id="mobile-toggle"
-                  aria-label="Abrir menú"
-                  aria-controls="mobile-overlay"
-                  aria-expanded="false"
-                  class="navigation-mobile-toggle"
-                >
-                  <svg
-                    fill="none"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
-                  </svg>
-                </button>
-              </div>
-            </nav>
-            <div id="mobile-overlay" class="navigation-mobile-overlay">
-              <div class="navigation-mobile-header">
-                <a href="index.html">
-                  <div aria-label="FajaBella Home" class="navigation-brand">
-                    <span class="section-title">FajaBella</span>
-                  </div>
-                </a>
-                <button
-                  id="mobile-close"
-                  aria-label="Cerrar menú"
-                  class="navigation-mobile-close"
-                >
-                  <svg
-                    fill="none"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M18 6L6 18M6 6l12 12"></path>
-                  </svg>
-                </button>
-              </div>
-              <div class="navigation-mobile-content">
-                <ul class="navigation-mobile-links">
-                  <li>
-                    <a href="index.html">
-                      <div class="navigation-mobile-link">
-                        <span>Inicio</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="navigation-mobile-link">
-                        <span>Colección</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="navigation-mobile-link">
-                        <span>Guía de Tallas</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="navigation-mobile-link">
-                        <span>Sobre Nosotros</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="navigation-mobile-footer">
-                  <p class="section-content navigation-promo">
-                    Tallas XS a 3XS • Desde $25
-                  </p>
-                  <a href="https://wa.me/your-number">
-                    <div class="btn-lg btn-primary navigation-cta-full btn">
-                      <svg
-                        fill="none"
-                        width="24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
-                        <path
-                          d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"
-                        ></path>
-                      </svg>
-                      <a href=https://wa.me/18097655525?text=Faja%20Ductesa " target="_blank" style="...">Pedir por WhatsApp</a>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="navigation-container4">
-              <div class="navigation-container5">
-                <style>
-                          @keyframes fadeIn {from {opacity: 0;
-                  transform: translateY(-10px);}
-                  to {opacity: 1;
-                  transform: translateY(0);}}
-                </style>
-              </div>
-            </div>
-            <div class="navigation-container6">
-              <div class="navigation-container7">
-                <script defer="" data-name="navigation-logic">
-                  document.addEventListener('DOMContentLoaded', function() {
-                    (function(){
-                      const mobileToggle = document.getElementById("mobile-toggle")
-                      const mobileClose = document.getElementById("mobile-close")
-                      const mobileOverlay = document.getElementById("mobile-overlay")
-                      const navLinks = document.querySelectorAll(".navigation-mobile-link")
+/* ════════════════════════════════════════════
+   TICKER
+════════════════════════════════════════════ */
+.ticker{background:linear-gradient(90deg,var(--f1),#ff4dab,var(--coral),var(--f1));background-size:300%;padding:12px 0;overflow:hidden;animation:tickerBg 7s ease infinite}
+@keyframes tickerBg{0%{background-position:0%}50%{background-position:100%}100%{background-position:0%}}
+.ticker-track{display:flex;gap:48px;white-space:nowrap;animation:tickerRoll 20s linear infinite}
+.ticker-item{display:flex;align-items:center;gap:10px;font-size:.73rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.93);flex-shrink:0}
+.t-star{color:var(--gold2);font-size:.95rem}
+@keyframes tickerRoll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-                      function openMenu() {
-                        mobileOverlay.classList.add("is-active")
-                        mobileToggle.setAttribute("aria-expanded", "true")
-                        document.body.style.overflow = "hidden"
-                      }
+/* ════════════════════════════════════════════
+   SECTION HELPERS
+════════════════════════════════════════════ */
+.container{max-width:1160px;margin:0 auto;padding:0 28px}
+.sec-eye{display:inline-flex;align-items:center;gap:10px;font-size:.69rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--f1);margin-bottom:12px}
+.sec-eye::before{content:'';width:26px;height:2.5px;background:linear-gradient(90deg,var(--f1),var(--f2));border-radius:3px;display:block}
+h2.sec-title{font-family:'Great Vibes',cursive;font-size:clamp(2.4rem,5vw,4.2rem);color:var(--plum);line-height:1.1;margin-bottom:10px}
+.sec-sub{font-size:.9rem;color:var(--muted);max-width:470px}
 
-                      function closeMenu() {
-                        mobileOverlay.classList.remove("is-active")
-                        mobileToggle.setAttribute("aria-expanded", "false")
-                        document.body.style.overflow = ""
-                      }
+/* ════════════════════════════════════════════
+   BENEFITS
+════════════════════════════════════════════ */
+.benefits{padding:84px 0;background:var(--white)}
+.bh{text-align:center;margin-bottom:50px}
+.bh .sec-sub{margin:8px auto 0}
+.bg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.bc{background:var(--bg);border:1.5px solid rgba(255,0,128,.09);border-radius:20px;padding:28px 22px;text-align:center;opacity:0;transform:translateY(26px);transition:opacity .6s,transform .6s}
+.bc.vis{opacity:1;transform:translateY(0)}
+.bc:hover{transform:translateY(-6px) !important;box-shadow:0 14px 42px rgba(255,0,128,.13);border-color:rgba(255,0,128,.28)}
+.bc-icon{width:60px;height:60px;border-radius:18px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:1.75rem;background:linear-gradient(135deg,#ffe0f0,#ffd0e8);box-shadow:0 4px 16px rgba(255,0,128,.12)}
+.bc-title{font-family:'Italiana',serif;font-size:1.08rem;color:var(--plum);margin-bottom:7px;letter-spacing:.02em}
+.bc-desc{font-size:.83rem;color:var(--muted);line-height:1.6}
 
-                      mobileToggle.addEventListener("click", openMenu)
-                      mobileClose.addEventListener("click", closeMenu)
+/* ════════════════════════════════════════════
+   PHOTO CAROUSEL
+════════════════════════════════════════════ */
+.car-section{padding:88px 0 96px;background:linear-gradient(160deg,#ffe6f5 0%,var(--bg2) 60%,#fce4f3 100%);overflow:hidden}
+.car-head{text-align:center;margin-bottom:48px}
+.car-head .sec-sub{margin:8px auto 0}
+.car-wrap{position:relative;max-width:1160px;margin:0 auto;padding:0 56px}
+.car-outer{overflow:hidden;border-radius:22px}
+.car-track{display:flex;gap:18px;transition:transform .52s cubic-bezier(.4,0,.2,1)}
+.car-slide{flex-shrink:0;width:calc((100% - 36px)/3);border-radius:18px;overflow:hidden;aspect-ratio:3/4;position:relative;box-shadow:0 10px 36px rgba(100,0,70,.18);cursor:pointer}
+.car-slide img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.car-slide:hover img{transform:scale(1.06)}
+.car-slide::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(80,0,50,.5),transparent 55%);opacity:0;transition:opacity .3s}
+.car-slide:hover::after{opacity:1}
+.car-btn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:var(--white);border:2px solid rgba(255,0,128,.18);color:var(--f1);cursor:pointer;z-index:10;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(255,0,128,.18);transition:all .25s}
+.car-btn:hover{background:var(--f1);color:#fff;border-color:var(--f1);box-shadow:0 6px 26px rgba(255,0,128,.42)}
+.car-prev{left:4px}.car-next{right:4px}
+.car-dots{display:flex;justify-content:center;gap:8px;margin-top:26px}
+.car-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,0,128,.22);cursor:pointer;border:none;transition:all .3s}
+.car-dot.active{background:var(--f1);width:22px;border-radius:4px}
 
-                      navLinks.forEach((link) => {
-                        link.addEventListener("click", closeMenu)
-                      })
+/* ════════════════════════════════════════════
+   CATALOG
+════════════════════════════════════════════ */
+.catalog{padding:96px 0 110px;background:var(--white)}
+.cat-head{text-align:center;margin-bottom:60px}
+.cat-head .sec-sub{margin:8px auto 0}
 
-                      window.addEventListener("keydown", (e) => {
-                        if (e.key === "Escape" && mobileOverlay.classList.contains("is-active")) {
-                          closeMenu()
-                        }
-                      })
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-bottom:40px}
 
-                      let lastScroll = 0
-                      const nav = document.getElementById("navigation-main")
+.prod-card{background:var(--bg);border:1.5px solid rgba(255,0,128,.09);border-radius:24px;overflow:hidden;transition:transform .3s,box-shadow .3s;opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease;display:flex;flex-direction:column}
+.prod-card.vis{opacity:1;transform:translateY(0)}
+.prod-card:hover{transform:translateY(-6px) !important;box-shadow:0 18px 50px rgba(255,0,128,.14)}
 
-                      window.addEventListener("scroll", () => {
-                        const currentScroll = window.pageYOffset
+.prod-img-wrap{position:relative;aspect-ratio:4/5;overflow:hidden}
+.prod-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.prod-card:hover .prod-img-wrap img{transform:scale(1.05)}
+.prod-badge{position:absolute;top:14px;left:14px;background:linear-gradient(135deg,var(--f1),var(--f2));color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border-radius:50px;box-shadow:0 3px 12px rgba(255,0,128,.4)}
+.prod-badge.gold-badge{background:linear-gradient(135deg,#e8a000,var(--gold))}
+.prod-badge.sale-badge{background:linear-gradient(135deg,var(--coral),#ff3b3b)}
 
-                        if (currentScroll <= 0) {
-                          nav.style.transform = "translateY(0)"
-                          return
-                        }
+.prod-body{padding:22px 20px 24px;display:flex;flex-direction:column;gap:14px;flex:1}
+.prod-name{font-family:'Italiana',serif;font-size:1.25rem;color:var(--plum);letter-spacing:.02em}
+.prod-desc{font-size:.83rem;color:var(--muted);line-height:1.65}
 
-                        if (currentScroll > lastScroll && !mobileOverlay.classList.contains("is-active")) {
-                          nav.style.transform = "translateY(-100%)"
-                        } else {
-                          nav.style.transform = "translateY(0)"
-                        }
+/* Price display */
+.prod-price-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.prod-price{font-family:'Raleway',sans-serif;font-size:1.65rem;font-weight:800;color:var(--f1)}
+.prod-price-old{font-size:.95rem;color:#bfa0b0;text-decoration:line-through;font-weight:500}
+.prod-savings{font-size:.73rem;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--coral),#ff3b3b);padding:3px 10px;border-radius:50px}
 
-                        lastScroll = currentScroll
-                      })
-                    })()
-                  });
-                </script>
-              </div>
-            </div>
-          </div>
-        </navigation-wrapper>
-        <div class="home-container11">
-          <div class="home-container12">
-            <style>
-              section {
-                overflow: hidden;
-                position: relative;
-              }
-            </style>
-          </div>
+/* Size selector */
+.prod-sizes-label{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.prod-sizes{display:flex;gap:7px;flex-wrap:wrap}
+.size-btn{min-width:42px;padding:7px 10px;border:1.5px solid rgba(255,0,128,.2);background:var(--white);border-radius:10px;font-family:'Raleway',sans-serif;font-size:.8rem;font-weight:700;color:var(--plum2);cursor:pointer;transition:all .22s;text-align:center}
+.size-btn:hover{border-color:var(--f1);color:var(--f1);background:#fff0f7}
+.size-btn.selected{background:linear-gradient(135deg,var(--f1),var(--f2));color:#fff;border-color:transparent;box-shadow:0 3px 12px rgba(255,0,128,.35)}
+.size-btn.out{opacity:.4;pointer-events:none;text-decoration:line-through}
+
+/* Quantity */
+.qty-row{display:flex;align-items:center;gap:10px}
+.qty-label{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.qty-ctrl{display:flex;align-items:center;gap:0;border:1.5px solid rgba(255,0,128,.2);border-radius:12px;overflow:hidden}
+.qty-btn{width:34px;height:34px;background:none;border:none;cursor:pointer;font-size:1.1rem;font-weight:700;color:var(--f1);transition:background .2s;display:flex;align-items:center;justify-content:center}
+.qty-btn:hover{background:#fff0f7}
+.qty-num{width:38px;text-align:center;font-weight:700;font-size:.9rem;color:var(--plum);border:none;border-left:1px solid rgba(255,0,128,.15);border-right:1px solid rgba(255,0,128,.15);padding:0 4px;line-height:34px}
+
+/* Add to cart / order btn */
+.prod-order-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#fff;font-family:'Raleway',sans-serif;font-weight:800;font-size:.88rem;letter-spacing:.04em;padding:14px;border-radius:14px;border:none;cursor:pointer;box-shadow:0 5px 20px rgba(37,211,102,.3);transition:all .25s;margin-top:auto}
+.prod-order-btn:hover{background:var(--wa2);transform:translateY(-2px);box-shadow:0 8px 26px rgba(37,211,102,.45)}
+.prod-order-btn svg{flex-shrink:0}
+
+/* ════════════════════════════════════════════
+   ORDER SUMMARY FLOATING BAR
+════════════════════════════════════════════ */
+.order-bar{position:fixed;bottom:0;left:0;right:0;z-index:400;background:linear-gradient(135deg,var(--plum),var(--plum2));padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 -4px 30px rgba(0,0,0,.25);transform:translateY(100%);transition:transform .4s cubic-bezier(.4,0,.2,1)}
+.order-bar.show{transform:translateY(0)}
+.order-bar-left{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}
+.order-bar-label{font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.order-bar-summary{font-family:'Raleway',sans-serif;font-weight:800;font-size:1rem;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.order-bar-price{font-family:'Raleway',sans-serif;font-weight:800;font-size:1.35rem;color:var(--gold);flex-shrink:0}
+.order-bar-btn{display:flex;align-items:center;gap:9px;background:var(--wa);color:#fff;padding:12px 22px;border-radius:50px;font-weight:800;font-size:.85rem;letter-spacing:.04em;white-space:nowrap;box-shadow:0 4px 18px rgba(37,211,102,.4);transition:all .25s;flex-shrink:0}
+.order-bar-btn:hover{background:var(--wa2);transform:scale(1.03)}
+
+/* ════════════════════════════════════════════
+   TESTIMONIALS
+════════════════════════════════════════════ */
+.testim{padding:88px 0;background:linear-gradient(160deg,#ffeaf5,var(--bg2))}
+.testim-head{text-align:center;margin-bottom:50px}
+.testim-head .sec-sub{margin:8px auto 0}
+.test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:22px}
+.tc{background:var(--white);border:1.5px solid rgba(255,0,128,.09);border-radius:20px;padding:28px 24px;display:flex;flex-direction:column;gap:14px;opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+.tc.vis{opacity:1;transform:translateY(0)}
+.tc:nth-child(2){transition-delay:.15s}.tc:nth-child(3){transition-delay:.3s}
+.tc-stars{font-size:1.05rem;letter-spacing:2px;color:var(--gold)}
+.tc-text{font-size:.9rem;color:var(--text);line-height:1.75;font-style:italic;flex:1}
+.tc-author{display:flex;align-items:center;gap:12px}
+.tc-av{width:42px;height:42px;border-radius:50%;overflow:hidden;border:2.5px solid var(--f1);flex-shrink:0}
+.tc-av img{width:100%;height:100%;object-fit:cover}
+.tc-name{font-weight:800;font-size:.86rem;color:var(--plum)}
+.tc-city{font-size:.76rem;color:var(--muted)}
+
+/* ════════════════════════════════════════════
+   CTA SECTION
+════════════════════════════════════════════ */
+.cta-sec{padding:108px 28px;background:linear-gradient(140deg,#1a0012 0%,var(--plum) 40%,var(--plum3) 80%);text-align:center;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(255,0,128,.16),transparent 65%);pointer-events:none}
+.cta-in{position:relative;z-index:1;max-width:600px;margin:0 auto}
+.cta-script{font-family:'Great Vibes',cursive;font-size:clamp(2.5rem,6vw,4.8rem);color:var(--gold2);line-height:1.1;margin-bottom:14px;text-shadow:0 0 60px rgba(245,200,66,.4)}
+.cta-body{color:rgba(255,255,255,.62);font-size:.93rem;margin-bottom:36px;line-height:1.8}
+.cta-trust{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:28px}
+.cta-ti{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.5);font-size:.76rem;font-weight:700;letter-spacing:.06em}
+.cta-ti svg{color:var(--gold)}
+
+/* ════════════════════════════════════════════
+   CONTACT
+════════════════════════════════════════════ */
+.contact-sec{padding:70px 0;background:var(--bg)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.contact-info{display:flex;flex-direction:column;gap:16px;margin-top:26px}
+.contact-row{display:flex;align-items:center;gap:14px;font-size:.88rem;color:var(--text)}
+.contact-icon{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#ffe0f0,#ffd0e8);display:flex;align-items:center;justify-content:center;color:var(--f1);flex-shrink:0}
+.contact-quote{font-family:'Great Vibes',cursive;font-size:2.1rem;color:var(--f1);line-height:1.2;margin-bottom:18px}
+
+/* ════════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════════ */
+footer{background:var(--plum);color:rgba(255,255,255,.4);padding:28px 24px;text-align:center;font-size:.78rem;padding-bottom:90px}
+.footer-logo{font-family:'Great Vibes',cursive;font-size:1.9rem;color:rgba(255,255,255,.7);margin-bottom:7px}
+footer a{color:var(--gold)}
+
+/* ════════════════════════════════════════════
+   WA FLOAT BUTTON
+════════════════════════════════════════════ */
+.wa-float{position:fixed;bottom:100px;right:20px;z-index:350;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.48);animation:waPulse 2.5s ease-in-out infinite;transition:transform .2s}
+.wa-float:hover{transform:scale(1.1)}
+@keyframes waPulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.48)}50%{box-shadow:0 4px 38px rgba(37,211,102,.72),0 0 0 10px rgba(37,211,102,.07)}}
+.order-bar.show ~ .wa-float, body.bar-on .wa-float{bottom:100px}
+
+/* ════════════════════════════════════════════
+   MOBILE DRAWER
+════════════════════════════════════════════ */
+.mdrawer{position:fixed;inset:0;z-index:500;pointer-events:none}
+.mback{position:absolute;inset:0;background:rgba(40,0,28,.56);opacity:0;transition:opacity .3s;backdrop-filter:blur(4px)}
+.mpanel{position:absolute;top:0;right:0;width:min(84vw,310px);height:100%;background:var(--bg);transform:translateX(100%);transition:transform .38s cubic-bezier(.4,0,.2,1);padding:86px 30px 40px;display:flex;flex-direction:column;gap:6px}
+.mdrawer.open{pointer-events:all}
+.mdrawer.open .mback{opacity:1}
+.mdrawer.open .mpanel{transform:translateX(0)}
+.mlink{display:block;padding:13px 0;font-size:.98rem;font-weight:700;color:var(--text);border-bottom:1px solid rgba(255,0,128,.1);letter-spacing:.03em}
+.mclose{position:absolute;top:16px;right:16px;width:36px;height:36px;background:rgba(255,0,128,.08);border:none;border-radius:50%;cursor:pointer;color:var(--plum);display:flex;align-items:center;justify-content:center}
+
+/* ════════════════════════════════════════════
+   RESPONSIVE
+════════════════════════════════════════════ */
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:36px}.contact-grid>div:last-child{text-align:center;align-items:center;display:flex;flex-direction:column}}
+@media(max-width:768px){.nav-links,.nav-cta{display:none}.nav-toggle{display:flex}.car-slide{width:calc((100% - 18px)/2)}.car-wrap{padding:0 46px}}
+@media(max-width:500px){.car-slide{width:82%}.car-wrap{padding:0 38px}.cat-grid{grid-template-columns:1fr}.order-bar{flex-wrap:wrap}.order-bar-btn{width:100%;justify-content:center}}
+
+/* ════════════════════════════════════════════
+   REVEAL
+════════════════════════════════════════════ */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.vis{opacity:1;transform:translateY(0)}
+.rd1{transition-delay:.1s}.rd2{transition-delay:.2s}.rd3{transition-delay:.3s}
+</style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar dark-mode" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-brand">
+      <div class="nav-logo-ring"><img src="logo_ductesa.jpeg" alt="Logo"/></div>
+      <span class="nav-name">Fajas Ductesa</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#catalog">Catálogo</a></li>
+      <li><a href="#carousel">Galería</a></li>
+      <li><a href="#testimonials">Opiniones</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/18097655525" class="nav-cta" id="navWaBtn">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098-4.759.849-.11.011a1 1 0 0 1-.11 0l-.102-.013-.108-.024-.105-.037-.099-.047-.093-.058-.014-.011-.012-.007-.086-.073-.077-.08-.067-.088-.056-.094-.034-.07-.04-.108-.028-.128-.012-.102a1 1 0 0 1 0-.125l.012-.1.024-.11.045-.122 1.433-3.304-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"/></svg>
+      WhatsApp
+    </a>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mdrawer" id="mdrawer">
+  <div class="mback" id="mback"></div>
+  <div class="mpanel">
+    <button class="mclose" id="mclose"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <a href="#catalog" class="mlink">Catálogo</a>
+    <a href="#carousel" class="mlink">Galería</a>
+    <a href="#testimonials" class="mlink">Opiniones</a>
+    <a href="#contact" class="mlink">Contacto</a>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="hero">
+  <div class="hero-orb1"></div><div class="hero-orb2"></div>
+  <div class="hero-bgimg"></div>
+  <div class="hero-content">
+    <div class="hero-logo-wrap">
+      <div class="hero-logo-ring"><img src="logo_ductesa.jpeg" alt="Fajas Ductesa Logo"/></div>
+    </div>
+    <div class="hero-badge">Dermatológicamente Probadas</div>
+    <h1 class="hero-storename">Fajas Ductesa</h1>
+    <p class="hero-sub">Alta Compresión · Levanta Cola · Broche Frontal</p>
+    <div class="hero-gems">
+      <div class="hero-gem-line"></div><span class="hero-gem">✦</span>
+      <div class="hero-gem-line r"></div>
+    </div>
+    <p class="hero-tagline">La silueta que siempre soñaste, con la elegancia que mereces</p>
+    <div class="hero-actions">
+      <a href="#catalog" class="btn-hot">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        Ver Catálogo
+      </a>
+      <a href="#carousel" class="btn-ghost">Galería ✦</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="hero-arrow"></div></div>
+</section>
+
+<!-- ══ TICKER ══ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="t-star">✦</span> Alta Compresión</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Levanta Cola</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Broche Frontal</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Dermatológicamente Probadas</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Envíos Nacionales</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Desde RD$1,500</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Tallas XS – 3XL</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Alta Compresión</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Levanta Cola</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Broche Frontal</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Dermatológicamente Probadas</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Envíos Nacionales</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Desde RD$1,500</span>
+    <span class="ticker-item"><span class="t-star">✦</span> Tallas XS – 3XL</span>
+  </div>
+</div>
+
+<!-- ══ BENEFITS ══ -->
+<section class="benefits" id="benefits">
+  <div class="container">
+    <div class="bh reveal"><span class="sec-eye">¿Por qué Ductesa?</span><h2 class="sec-title">Diseñadas para ti</h2><p class="sec-sub">Calidad comprobada que transforma tu figura desde el primer uso.</p></div>
+    <div class="bg-grid">
+      <div class="bc"><div class="bc-icon">🍑</div><h3 class="bc-title">Levanta Cola</h3><p class="bc-desc">Realce natural y definición de glúteos visible bajo cualquier outfit desde el primer uso.</p></div>
+      <div class="bc"><div class="bc-icon">🔒</div><h3 class="bc-title">Broche Frontal</h3><p class="bc-desc">Cierre inteligente de fácil apertura, máxima sujeción sin complicaciones.</p></div>
+      <div class="bc"><div class="bc-icon">💫</div><h3 class="bc-title">Alta Compresión</h3><p class="bc-desc">Tela premium que moldea, define y estiliza sin cortar ni incomodarte.</p></div>
+      <div class="bc"><div class="bc-icon">🌸</div><h3 class="bc-title">Piel Segura</h3><p class="bc-desc">Probadas dermatológicamente. Apta para piel sensible, transpirable y suave al tacto.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PHOTO CAROUSEL ══ -->
+<section class="car-section" id="carousel">
+  <div class="container">
+    <div class="car-head reveal"><span class="sec-eye">Galería</span><h2 class="sec-title">Resultados Reales</h2><p class="sec-sub">Desliza y descubre cómo nuestras fajas transforman siluetas reales.</p></div>
+  </div>
+  <div class="car-wrap reveal">
+    <div class="car-outer">
+      <div class="car-track" id="carTrack">
+        <div class="car-slide"><img src="https://images.pexels.com/photos/5608416/pexels-photo-5608416.jpeg?auto=compress&cs=tinysrgb&w=700" alt="R1"/></div>
+        <div class="car-slide"><img src="https://images.pexels.com/photos/13816060/pexels-photo-13816060.jpeg?auto=compress&cs=tinysrgb&w=700" alt="R2"/></div>
+        <div class="car-slide"><img src="https://images.pexels.com/photos/6542043/pexels-photo-6542043.jpeg?auto=compress&cs=tinysrgb&w=700" alt="R3"/></div>
+        <div class="car-slide"><img src="https://images.pexels.com/photos/5311788/pexels-photo-5311788.jpeg?auto=compress&cs=tinysrgb&w=700" alt="R4"/></div>
+        <div class="car-slide"><img src="https://images.pexels.com/photos/8028335/pexels-photo-8028335.jpeg?auto=compress&cs=tinysrgb&w=700" alt="R5"/></div>
+        <div class="car-slide"><img src="https://images.pexels.com/photos/6320944/pexels-photo-6320944.jpeg?auto=compress&cs=tinysrgb&w=700" alt="R6"/></div>
+      </div>
+    </div>
+    <button class="car-btn car-prev" id="cPrev"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <button class="car-btn car-next" id="cNext"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+    <div class="car-dots" id="carDots"></div>
+  </div>
+</section>
+
+<!-- ══ CATALOG ══ -->
+<section class="catalog" id="catalog">
+  <div class="container">
+    <div class="cat-head reveal">
+      <span class="sec-eye">Catálogo Oficial</span>
+      <h2 class="sec-title">Elige tu Faja Perfecta</h2>
+      <p class="sec-sub">Selecciona el modelo, elige tu talla y haz tu pedido directo por WhatsApp — ¡en segundos!</p>
+    </div>
+    <div class="cat-grid" id="catGrid">
+      <!-- Cards injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="testim" id="testimonials">
+  <div class="container">
+    <div class="testim-head reveal"><span class="sec-eye">Opiniones</span><h2 class="sec-title">Lo que dicen nuestras clientas</h2><p class="sec-sub">+500 mujeres transformadas. Resultados reales, palabras reales.</p></div>
+    <div class="test-grid">
+      <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"La mejor inversión para mi figura. El broche frontal es súper cómodo y los resultados se notan al instante. ¡Me encanta el levanta cola!"</p><div class="tc-author"><div class="tc-av"><img src="https://images.pexels.com/photos/7752791/pexels-photo-7752791.jpeg?auto=compress&cs=tinysrgb&w=80" alt="María"/></div><div><div class="tc-name">María R.</div><div class="tc-city">Santo Domingo</div></div></div></div>
+      <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"Increíble calidad. He probado muchas marcas pero Fajas Ductesa realmente ofrece esa alta compresión que buscaba sin sacrificar comodidad."</p><div class="tc-author"><div class="tc-av"><img src="https://images.pexels.com/photos/14541216/pexels-photo-14541216.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Elena"/></div><div><div class="tc-name">Elena S.</div><div class="tc-city">Santiago</div></div></div></div>
+      <div class="tc"><div class="tc-stars">★★★★★</div><p class="tc-text">"Es mi segunda compra y no las cambio por nada. El servicio por WhatsApp fue excelente y mi pedido llegó súper rápido. ¡100% recomendadas!"</p><div class="tc-author"><div class="tc-av"><img src="https://images.pexels.com/photos/698532/pexels-photo-698532.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Sofía"/></div><div><div class="tc-name">Sofía V.</div><div class="tc-city">La Romana</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section class="cta-sec">
+  <div class="cta-in reveal">
+    <p class="cta-script">¿Lista para brillar?</p>
+    <p class="cta-body">Pide tu faja hoy mismo y recibe asesoría personalizada sobre tu talla ideal. Respuesta inmediata por WhatsApp.</p>
+    <a href="https://wa.me/18097655525?text=Hola%2C%20quiero%20pedir%20mi%20Faja%20Ductesa" id="ctaWaBtn" class="btn-hot">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098-4.759.849-.11.011a1 1 0 0 1-.11 0l-.102-.013-.108-.024-.105-.037-.099-.047-.093-.058-.014-.011-.012-.007-.086-.073-.077-.08-.067-.088-.056-.094-.034-.07-.04-.108-.028-.128-.012-.102a1 1 0 0 1 0-.125l.012-.1.024-.11.045-.122 1.433-3.304-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"/></svg>
+      Comprar por WhatsApp
+    </a>
+    <div class="cta-trust">
+      <span class="cta-ti"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-9"/></svg>Envíos nacionales</span>
+      <span class="cta-ti"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-9"/></svg>Desde RD$1,500</span>
+      <span class="cta-ti"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-9"/></svg>Asesoría de talla gratis</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section class="contact-sec" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="sec-eye">Encuéntranos</span>
+        <h2 class="sec-title">Contáctanos</h2>
+        <div class="contact-info">
+          <div class="contact-row"><div class="contact-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></div>Avenida 27 de Febrero, Reparto Rosa</div>
+          <div class="contact-row"><div class="contact-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>fajasducted.z1234@gmail.com</div>
+          <div class="contact-row"><div class="contact-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098-4.759.849-.11.011a1 1 0 0 1-.11 0l-.102-.013-.108-.024-.105-.037-.099-.047-.093-.058-.014-.011-.012-.007-.086-.073-.077-.08-.067-.088-.056-.094-.034-.07-.04-.108-.028-.128-.012-.102a1 1 0 0 1 0-.125l.012-.1.024-.11.045-.122 1.433-3.304-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"/></svg></div><a href="https://wa.me/18097655525">(809) 765-5525</a></div>
         </div>
-        <div class="home-container13">
-          <div class="home-container14">
-            <style>
-                      @keyframes slideBanner {0% {transform: translateX(0);}
-              45% {transform: translateX(0);}
-              50% {transform: translateX(-50%);}
-              95% {transform: translateX(-50%);}
-              100% {transform: translateX(0);}}
-            </style>
-          </div>
-        </div>
-        <div class="home-container15">
-          <div class="home-container16">
-            <script defer="" data-name="fajabella-interactions">
-              document.addEventListener('DOMContentLoaded', function() {
-                (function(){
-                  // Intersection Observer for scroll animations
-                  const observerOptions = {
-                    threshold: 0.1,
-                  }
-
-                  const observer = new IntersectionObserver((entries) => {
-                    entries.forEach((entry) => {
-                      if (entry.isIntersecting) {
-                        entry.target.style.opacity = "1"
-                        entry.target.style.transform = "translateY(0)"
-                      }
-                    })
-                  }, observerOptions)
-
-                  // Apply initial styles and observe elements
-                  document.querySelectorAll(".benefit-item, .steps-cta__item, .product-card").forEach((el) => {
-                    el.style.opacity = "0"
-                    el.style.transform = "translateY(30px)"
-                    el.style.transition = "all 0.6s ease-out"
-                    observer.observe(el)
-                  })
-
-                  // Horizontal scroll snap behavior for rails
-                  const rails = document.querySelectorAll(".product-rail__track, .testimonials-rail__track")
-                  rails.forEach((rail) => {
-                    let isDown = false
-                    let scrollLeft
-                    let startX
-
-                    rail.addEventListener("mousedown", (e) => {
-                      isDown = true
-                      startX = e.pageX - rail.offsetLeft
-                      scrollLeft = rail.scrollLeft
-                    })
-
-                    rail.addEventListener("mouseleave", () => {
-                      isDown = false
-                    })
-
-                    rail.addEventListener("mouseup", () => {
-                      isDown = false
-                    })
-
-                    rail.addEventListener("mousemove", (e) => {
-                      if (!isDown) return
-                      e.preventDefault()
-                      const x = e.pageX - rail.offsetLeft
-                      const walk = (x - startX) * 2
-                      rail.scrollLeft = scrollLeft - walk
-                    })
-                  })
-                })()
-              });
-            </script>
-          </div>
-        </div>
-        <div class="main-wrapper">
-          <header class="header-container">
-            <nav class="nav-content">
-              <div class="home-logo-wrapper1">
-                <img src="logo_ductesa.jpeg">
-                  <circle
-                    cx="100"
-                    cy="150"
-                    r="80"
-                    fill="none"
-                    stroke="var(--color-pink-logo)"
-                    stroke-width="2"
-                  >img</circle>
-                  <path
-                    d="M80 150 Q 100 80 120 150 T 160 150"
-                    fill="none"
-                    stroke="var(--color-pink-logo)"
-                    stroke-width="4"
-                  ></path>
-                  <text
-                    x="180"
-                    y="140"
-                    font-family="Playfair Display"
-                    font-size="60"
-                    fill="var(--color-pink-logo)"
-                  ></text>
-                </svg>
-                <span>Faja</span>
-
-                <text
-                  x="180"
-                  y="200"
-                  font-family="Montserrat"
-                  font-size="30"
-                  letter-spacing="10"
-                  fill="var(--color-on-surface)"
-                >
-                  <span>DUCTESA</span>
-                </text>
-              </div>
-              <div class="nav-links">
-                <a href="#hero">
-                  <div class="nav-item"><span>Inicio</span></div>
-                </a>
-                <a href="#gallery">
-                  <div class="nav-item"><span>Galería</span></div>
-                </a>
-                <a href="#testimonials">
-                  <div class="nav-item"><span>Testimonios</span></div>
-                </a>
-                <a href="#footer">
-                  <div class="nav-item"><span>Contacto</span></div>
-                </a>
-              </div>
-            </nav>
-          </header>
-          <section id="hero" class="home-hero-section1">
-            <div class="home-hero-image-container">
-              <img
-                src="https://images.pexels.com/photos/12270102/pexels-photo-12270102.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                alt="Faja Ductesa High Compression"
-                class="hero-img"
-              />
-              <div class="home-hero-overlay"></div>
-            </div>
-            <div class="hero-content-wrapper">
-              <h1 class="home-hero-title2 hero-title">
-                Fajas Ductesa
-              </h1>
-              <p class="home-hero-subtitle1 hero-subtitle">
-                Realza tu figura con la máxima compresión y elegancia. Diseñadas
-                para resultados reales.
-              </p>
-              <a href="https://wa.me/18097655525">
-                <div class="btn btn-primary btn-lg">
-                  <span>Explorar Catálogo</span>
-                </div>
-              </a>
-            </div>
-          </section>
-          <section id="gallery" class="home-gallery-section">
-            <div class="container">
-              <h2 class="section-title">Resultados Reales</h2>
-              <p class="section-subtitle">
-                Descubre cómo nuestras fajas transforman siluetas con enfoque en
-                realce y soporte.
-              </p>
-              <div class="gallery-grid">
-                <div class="gallery-item">
-                  <img
-                    src="https://images.pexels.com/photos/5608416/pexels-photo-5608416.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Back view results"
-                    class="gallery-img"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="chica.jpg"
-                    alt="Front compression view"
-                    class="gallery-img"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="https://images.pexels.com/photos/13816060/pexels-photo-13816060.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Comfort and style"
-                    class="gallery-img"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="https://images.pexels.com/photos/6542043/pexels-photo-6542043.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Waist training results"
-                    class="gallery-img"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="testimonials" class="home-testimonials-section1">
-            <div class="container">
-              <h2 class="section-title">Lo que dicen nuestras clientas</h2>
-              <div class="home-testimonials-grid">
-                <div class="home-testimonial-card2">
-                  <div class="quote-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-quote"
-                    >
-                      <path
-                        d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.5 1 4.066 2 5V21Z"
-                      ></path>
-                      <path
-                        d="M15 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.5 1 4.066 2 5V21Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <p class="section-content">
-                    "La mejor inversión para mi figura. El broche frontal es
-                    súper cómodo y los resultados se notan al instante. ¡Me
-                    encanta el levanta cola!"
-                  </p>
-                  <span class="home-testimonial-name">Maria</span>
-                </div>
-                <div class="home-testimonial-card2">
-                  <div class="quote-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-quote"
-                    >
-                      <path
-                        d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.5 1 4.066 2 5V21Z"
-                      ></path>
-                      <path
-                        d="M15 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.5 1 4.066 2 5V21Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <p class="section-content">
-                    "Increíble calidad. He probado muchas marcas pero Fajas
-                    Ductesa realmente ofrece esa alta compresión que buscaba sin
-                    sacrificar comodidad."
-                  </p>
-                  <span class="home-testimonial-name">Elena</span>
-                </div>
-                <div class="home-testimonial-card2">
-                  <div class="quote-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-quote"
-                    >
-                      <path
-                        d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.5 1 4.066 2 5V21Z"
-                      ></path>
-                      <path
-                        d="M15 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.5 1 4.066 2 5V21Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <p class="section-content">
-                    "Desde que uso mi faja me siento mucho más segura con mi
-                    ropa. El servicio al cliente por WhatsApp fue excelente y
-                    muy rápido."
-                  </p>
-                  <span class="home-testimonial-name">Sofia</span>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="cta-section">
-            <div class="container">
-              <div class="cta-card">
-                <h2 class="section-title">¿Lista para lucir espectacular?</h2>
-                <p class="section-content">
-                  Haz tu pedido hoy mismo y recibe asesoría personalizada sobre
-                  tu talla ideal.
-                </p>
-                <a href="https://wa.me/18097655525">
-                  <div class="home-whatsapp-btn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-phone"
-                    >
-                      <path
-                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                      ></path>
-                    </svg>
-                    <span>Pedir por WhatsApp</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </section>
-          <footer id="footer" class="footer-section">
-            <div class="container">
-              <div class="home-footer-grid">
-                <div class="footer-brand">
-                  <div class="home-logo-wrapper1 small">
-                    img src="logo_ductesa.jpeg" 
-                    <span>FAJA DUCTESA</span>
-
-                    <text
-                      x="180"
-                      y="200"
-                      font-family="Montserrat"
-                      font-size="30"
-                      letter-spacing="10"
-                      fill="var(--color-on-surface)"
-                    >
-                      <span>Dermatologiamente probadas </span>
-                    </text>
-                  </div>
-                  <p class="section-content">
-                    Especialistas en fajas de alta compresión para realzar tu
-                    belleza natural.
-                  </p>
-                </div>
-                <div class="footer-contact">
-                  <h3 class="home-footer-heading">Contacto</h3>
-                  <ul class="home-contact-list">
-                    <li class="home-contact-item1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-map-pin"
-                      >
-                        <path
-                          d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
-                        ></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                      </svg>
-                      <span>Avenida 27 de febrero, reparto Rosa</span>
-                    </li>
-                    <li class="home-contact-item1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-phone"
-                      >
-                        <path
-                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                        ></path>
-                      </svg>
-                      <span><a href=https://wa.me/18097655525?text=Faja%20Ductesa " target="_blank" style="..."> +1(809)765 5525</a></span>
-                    </li>
-                    <li class="home-contact-item1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-mail"
-                      >
-                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                        <path
-                          d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
-                        ></path>
-                      </svg>
-                      <span>fajasducted.z1234@gmail.com</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="home-footer-bottom1">
-                <p class="copyright">
-                  © 2024 Fajas Ductesa. Todos los derechos reservados.
-                </p>
-              </div>
-            </div>
-          </footer>
-        </div>
-        <div class="home-container17">
-          <div class="home-container18">
-            <script defer="" data-name="faja-interactions">
-              document.addEventListener('DOMContentLoaded', function() {
-                (function(){
-                  // Simple scroll reveal effect for gallery items
-                  const galleryItems = document.querySelectorAll(".gallery-item")
-
-                  const revealOnScroll = () => {
-                    galleryItems.forEach((item) => {
-                      const itemTop = item.getBoundingClientRect().top
-                      const triggerPoint = window.innerHeight - 100
-
-                      if (itemTop < triggerPoint) {
-                        item.style.opacity = "1"
-                        item.style.transform = "translateY(0)"
-                      }
-                    })
-                  }
-
-                  // Initial styles for animation
-                  galleryItems.forEach((item) => {
-                    item.style.opacity = "0"
-                    item.style.transform = "translateY(20px)"
-                    item.style.transition = "all 0.6s ease-out"
-                  })
-
-                  window.addEventListener("scroll", revealOnScroll)
-                  revealOnScroll() // Run once on load
-                })()
-              });
-            </script>
-          </div>
-        </div>
-        <footer-wrapper class="footer-wrapper">
-          <!--Footer component-->
-          <div class="footer-container1">
-            <footer class="footer-root">
-              <div class="footer-container">
-                <div class="footer-grid">
-                  <div class="footer-brand footer-column">
-                    <h2 class="section-title">Fajas Ductosa</h2>
-                    <p class="section-content">
-                      Realza tu figura con nuestras fajas de alta compresión.
-                      Especialistas en tallas XS a 3XS para que luzcas
-                      espectacular en cada momento.
-                    </p>
-                    <div class="footer-social-wrapper">
-                      <a href="https://wa.me/your-number">
-                        <div aria-label="WhatsApp" class="footer-social-link">
-                          <svg
-                            width="24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="24"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098l-4.759.849l-.11.011a1 1 0 0 1-.11 0l-.102-.013l-.108-.024l-.105-.037l-.099-.047l-.093-.058l-.014-.011l-.012-.007l-.086-.073l-.077-.08l-.067-.088l-.056-.094l-.034-.07l-.04-.108l-.028-.128l-.012-.102a1 1 0 0 1 0-.125l.012-.1| .024-.11l.045-.122l1.433-3.304l-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074l-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023l.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"
-                              fill="currentColor"
-                            ></path>
-                          </svg>
-                        </div>
-                      </a>
-                      <a href="#">
-                        <div aria-label="Instagram" class="footer-social-link">
-                          <svg
-                            width="24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="24"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm-4 5a4 4 0 0 0-3.995 3.8L8 12a4 4 0 1 0 4-4m4.5-1.5a1 1 0 0 0-.993.883l-.007.127a1 1 0 0 0 1.993.117L17.5 7.5a1 1 0 0 0-1-1"
-                              fill="currentColor"
-                            ></path>
-                          </svg>
-                        </div>
-                      </a>
-                      <a href="#">
-                        <div aria-label="Facebook" class="footer-social-link">
-                          <svg
-                            width="24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="24"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M18 2a1 1 0 0 1 .993.883L19 3v4a1 1 0 0 1-.883.993L18 8h-3v1h3a1 1 0 0 1 .991 1.131l-.02.112l-1 4a1 1 0 0 1-.858.75L17 15h-2v6a1 1 0 0 1-.883.993L14 22h-4a1 1 0 0 1-.993-.883L9 21v-6H7a1 1 0 0 1-.993-.883L6 14v-4a1 1 0 0 1 .883-.993L7 9h2V8a6 6 0 0 1 5.775-5.996L15 2z"
-                              fill="currentColor"
-                            ></path>
-                          </svg>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="footer-column footer-links">
-                    <h3 class="footer-heading">Explorar</h3>
-                    <nav class="footer-nav">
-                      <a href="#">
-                        <div class="footer-nav-link"><span>Inicio</span></div>
-                      </a>
-                      <a href="#">
-                        <div class="footer-nav-link"><span>Catálogo</span></div>
-                      </a>
-                      <a href="#">
-                        <div class="footer-nav-link">
-                          <span>Guía de Tallas</span>
-                        </div>
-                      </a>
-                      <a href="#">
-                        <div class="footer-nav-link">
-                          <span>Preguntas Frecuentes</span>
-                        </div>
-                      </a>
-                      <a href="#">
-                        <div class="footer-nav-link"><span>Contacto</span></div>
-                      </a>
-                    </nav>
-                  </div>
-                  <div class="footer-info footer-column">
-                    <h3 class="footer-heading">Servicio al Cliente</h3>
-                    <ul class="footer-info-list">
-                      <li class="footer-info-item">
-                        <svg
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0-4 0m10 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0m-4 0h6m4 0h2v-6h-8m0-5h5l3 5M3 9h4"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                        </svg>
-                        <span>Envíos a todo el país</span>
-                      </li>
-                      <li class="footer-info-item">
-                        <svg
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M22 10v6a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4v-6zM7.01 14H7a1 1 0 1 0 .01 2a1 1 0 0 0 0-2M13 14h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2m5-10a4 4 0 0 1 4 4H2a4 4 0 0 1 4-4z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                        <span>Precios desde $25</span>
-                      </li>
-                      <li class="footer-info-item">
-                        <svg
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                          <path
-                            d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"
-                          ></path>
-                        </svg>
-                        <span>Pedidos vía WhatsApp</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="footer-bottom">
-                  <div class="footer-divider"></div>
-                  <div class="footer-bottom-content">
-                    <p class="footer-copyright">
-                      © 2026 Fajas Ductosa. Todos los derechos reservados.
-                    </p>
-                    <div class="footer-legal">
-                      <a href="#">
-                        <div class="footer-legal-link">
-                          <span>Privacidad</span>
-                        </div>
-                      </a>
-                      <a href="#">
-                        <div class="footer-legal-link">
-                          <span>Términos</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </footer>
-            <div class="footer-container2">
-              <div class="footer-container3">
-                <script defer="" data-name="footer-interaction">
-                  document.addEventListener('DOMContentLoaded', function() {
-                    (function(){
-                      // Handle footer link hover micro-interactions if needed
-                      const footerLinks = document.querySelectorAll(".footer-nav-link, .footer-legal-link")
-
-                      footerLinks.forEach((link) => {
-                        link.addEventListener("mouseenter", () => {
-                          link.style.opacity = "0.8"
-                        })
-                        link.addEventListener("mouseleave", () => {
-                          link.style.opacity = "1"
-                        })
-                      })
-                    })()
-                  });
-                </script>
-              </div>
-            </div>
-          </div>
-        </footer-wrapper>
-        <section class="page-container">
-          <header class="main-header">
-            <div class="logo-wrapper">
-              <img
-                src="logo_ductesa.jpeg"
-                alt="Fajas Ductesa Logo"
-                class="brand-logo"
-              />
-            </div>
-          </header>
-          <section class="hero-section">
-            <div class="hero-image-container">
-              <img
-                src="https://images.pexels.com/photos/10965116/pexels-photo-10965116.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                alt="Faja Ductesa Premium Shot"
-                class="hero-product-img"
-              />
-            </div>
-          </section>
-          <section class="title-section">
-            <h1 class="home-hero-title hero-title">
-              Fajas Ductesa
-            </h1>
-            <p>levanta cola, broche frontal</p>
-          </section>
-          <section class="carousel-section">
-            <div id="carouselTrack" class="carousel-container">
-              <div class="carousel-item">
-                <img
-                  src="https://images.pexels.com/photos/7341731/pexels-photo-7341731.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Mujer real usando faja ductesa de espaldas"
-                  class="carousel-img"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="https://images.pexels.com/photos/9154950/pexels-photo-9154950.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Resultados reales faja ductesa"
-                  class="carousel-img"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="https://images.pexels.com/photos/36098087/pexels-photo-36098087.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                  alt="Efecto levanta cola fajas ductesa"
-                  class="carousel-img"
-                />
-              </div>
-            </div>
-            <div class="carousel-indicators">
-              <div class="dot active"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-            </div>
-          </section>
-          <section class="testimonials-section">
-            <h2 class="home-section-title section-title">
-              Lo que dicen nuestras clientas
-            </h2>
-            <div class="testimonials-grid">
-              <div class="home-testimonial-card">
-                <div class="star-rating">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path>
-                  </svg>
-                </div>
-                <p class="section-content">
-                  "Increíble el cambio, me siento mucho más segura. El levanta
-                  cola es súper natural."
-                </p>
-                <span class="client-name">Maria L.</span>
-              </div>
-              <div class="home-testimonial-card">
-                <div class="star-rating">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path>
-                  </svg>
-                </div>
-                <p class="section-content">
-                  "La calidad es de otro nivel. El broche frontal ayuda mucho y
-                  no se nota bajo la ropa."
-                </p>
-                <span class="client-name">Elena R.</span>
-              </div>
-              <div class="home-testimonial-card">
-                <div class="star-rating">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path></svg
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    ></path>
-                  </svg>
-                </div>
-                <p class="section-content">
-                  "Es mi segunda compra y no las cambio por nada. Excelente
-                  servicio por WhatsApp."
-                </p>
-                <span class="client-name">Sofia V.</span>
-              </div>
-            </div>
-          </section>
-          <section class="contact-section">
-            <div class="contact-info-grid">
-              <div class="contact-item">
-                <div class="icon-circle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                      <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                    </g>
-                  </svg>
-                </div>
-                <div class="text-group">
-                  <span class="label">Email</span>
-                  <p class="section-content">fajasducted.z1234@gmail.com</p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="icon-circle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path
-                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                      ></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </g>
-                  </svg>
-                </div>
-                <div class="text-group">
-                  <span class="label">Dirección</span>
-                  <p class="section-content">
-                    Avenida 27 de febrero, reparto Rosa
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <footer class="sticky-footer">
-            <div class="home-thq-footer-content-elm footer-content"></div>
-          </footer>
-        </section>
-        <div class="home-container19">
-          <div class="home-container20">
-            <script>
-              document.addEventListener('DOMContentLoaded', function() {
-                (function(){
-                  const carouselTrack = document.getElementById("carouselTrack")
-                  const dots = document.querySelectorAll(".dot")
-                  let currentIndex = 0
-
-                  function updateCarousel() {
-                    const itemWidth = carouselTrack.querySelector(".carousel-item").offsetWidth
-                    const gap = 16 // md spacing
-                    carouselTrack.style.transform = `translateX(-${currentIndex * (itemWidth + gap)}px)`
-
-                    dots.forEach((dot, index) => {
-                      dot.classList.toggle("active", index === currentIndex)
-                    })
-                  }
-
-                  // Simple auto-play for the carousel
-                  setInterval(() => {
-                    currentIndex = (currentIndex + 1) % 3
-                    updateCarousel()
-                  }, 4000)
-
-                  // Basic touch support for carousel
-                  let startX = 0
-                  carouselTrack.addEventListener("touchstart", (e) => {
-                    startX = e.touches[0].clientX
-                  })
-
-                  carouselTrack.addEventListener("touchend", (e) => {
-                    const endX = e.changedTouches[0].clientX
-                    if (startX - endX > 50) {
-                      currentIndex = Math.min(currentIndex + 1, 2)
-                    } else if (endX - startX > 50) {
-                      currentIndex = Math.max(currentIndex - 1, 0)
-                    }
-                    updateCarousel()
-                  })
-
-                  // Button pulse animation on page load
-                  const waBtn = document.getElementById("waBtn")
-                  if (waBtn) {
-                    setTimeout(() => {
-                      waBtn.style.transform = "scale(1.05)"
-                      setTimeout(() => {
-                        waBtn.style.transform = "scale(1)"
-                      }, 200)
-                    }, 1000)
-                  }
-                })()
-              });
-            </script>
-          </div>
-        </div>
-        <div class="home-container21">
-          <div class="home-container22">
-            <style>
-              body {
-                background-color: var(--color-surface);
-                color: var(--color-on-surface);
-                margin: 0;
-                padding: 0;
-                overflow-x: hidden;
-              }
-            </style>
-          </div>
-        </div>
-        <nav class="main-nav">
-          <div class="nav-container">
-            <div class="home-logo-wrapper">
-              <div class="logo-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#e91e63"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M6.331 8H17.67a2 2 0 0 1 1.977 2.304l-1.255 8.152A3 3 0 0 1 15.426 21H8.574a3 3 0 0 1-2.965-2.544l-1.255-8.152A2 2 0 0 1 6.331 8"
-                  ></path>
-                  <path d="M9 11V6a3 3 0 0 1 6 0v5"></path>
-                  <path
-                    d="M12 11c1.5 0 2.5 1 2.5 2.5S13.5 16 12 16s-2.5-1-2.5-2.5S10.5 11 12 11z"
-                    opacity="0.5"
-                  ></path>
-                  <path d="M8 13c-1-1-2-1-3 0s-1 2 0 3" opacity="0.8"></path>
-                  <path d="M16 13c1-1 2-1 3 0s1 2 0 3" opacity="0.8"></path>
-                </svg>
-              </div>
-              <span class="logo-text">Fajas Ductesa</span>
-            </div>
-            <a href="https://wa.me/18097655525">
-              <div class="btn-whatsapp btn btn-sm">
-                <div class="icon-inline">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098l-4.759.849l-.11.011a1 1 0 0 1-.11 0l-.102-.013l-.108-.024l-.105-.037l-.099-.047l-.093-.058l-.014-.011l-.012-.007l-.086-.073l-.077-.08l-.067-.088l-.056-.094l-.034-.07l-.04-.108l-.028-.128l-.012-.102a1 1 0 0 1 0-.125l.012-.1l.024-.11l.045-.122l1.433-3.304l-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074l-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023l.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"
-                    ></path>
-                  </svg>
-                </div>
-                <span><a href=https://wa.me/18097655525?text=Faja%20Ductesa " target="_blank" style="...">Pedir por WhatsApp</a></span>
-              </div>
-            </a>
-          </div>
-        </nav>
-        <section class="home-hero-section">
-          <div class="hero-media">
-            <video
-              autoplay="true"
-              loop="true"
-              muted="true"
-              playsinline="true"
-              poster="https://images.pexels.com/photos/6320941/pexels-photo-6320941.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940"
-              src="https://videos.pexels.com/video-files/27588398/12176456_360_640_30fps.mp4"
-              class="hero-video"
-            ></video>
-            <div class="hero-overlay"></div>
-          </div>
-          <div class="hero-content">
-            <h1 class="home-hero-title1 hero-title">Fajas Ductesa</h1>
-            <p class="home-hero-subtitle hero-subtitle">
-              Levanta cola, broche frontal. La silueta que siempre soñaste, con
-              la elegancia que mereces.
-            </p>
-            <div class="hero-actions">
-              <a href="https://wa.me/18097655525">
-                <div class="btn-whatsapp btn-pulse btn btn-lg">
-                  <div class="icon-inline">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098l-4.759.849l-.11.011a1 1 0 0 1-.11 0l-.102-.013l-.108-.024l-.105-.037l-.099-.047l-.093-.058l-.014-.011l-.012-.007l-.086-.073l-.077-.08l-.067-.088l-.056-.094l-.034-.07l-.04-.108l-.028-.128l-.012-.102a1 1 0 0 1 0-.125l.012-.1l.024-.11l.045-.122l1.433-3.304l-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074l-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023l.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>COMPRAR AHORA</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="gallery-section">
-          <div class="container">
-            <h2 class="home-section-title1 section-title">
-              Nuestras Clientas Reales
-            </h2>
-            <p class="home-section-subtitle section-subtitle">
-              Resultados que hablan por sí solos
-            </p>
-            <div id="clientCarousel" class="home-carousel-container">
-              <div class="carousel-track">
-                <div class="home-carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/5311788/pexels-photo-5311788.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Clienta Real 1"
-                  />
-                </div>
-                <div class="home-carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/8028335/pexels-photo-8028335.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Clienta Real 2"
-                  />
-                </div>
-                <div class="home-carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/13820312/pexels-photo-13820312.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Clienta Real 3"
-                  />
-                </div>
-                <div class="home-carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/1457977/pexels-photo-1457977.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Clienta Real 4"
-                  />
-                </div>
-                <div class="home-carousel-item">
-                  <img
-                    src="https://images.pexels.com/photos/6320944/pexels-photo-6320944.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Clienta Real 5"
-                  />
-                </div>
-              </div>
-              <div class="carousel-controls">
-                <button id="prevBtn" class="carousel-btn prev">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m15 18-6-6 6-6"></path>
-                  </svg>
-                </button>
-                <button id="nextBtn" class="carousel-btn next">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="m9 18 6-6-6-6"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="home-testimonials-section">
-          <div class="container">
-            <h2 class="home-section-title1 section-title">
-              Lo que dicen de nosotros
-            </h2>
-            <div class="testimonial-grid">
-              <div class="home-testimonial-card1">
-                <div class="testimonial-header">
-                  <img
-                    src="https://images.pexels.com/photos/7752791/pexels-photo-7752791.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Testimonio 1"
-                    class="testimonial-img"
-                  />
-                  <div class="testimonial-meta">
-                    <span class="testimonial-name">María R.</span>
-                    <div class="stars"><span>★★★★★</span></div>
-                  </div>
-                </div>
-                <p class="section-content">
-                  "Increíble el efecto levanta cola. Me siento mucho más segura
-                  con mis vestidos ahora. ¡Recomendado!"
-                </p>
-              </div>
-              <div class="home-testimonial-card1">
-                <div class="testimonial-header">
-                  <img
-                    src="https://images.pexels.com/photos/14541216/pexels-photo-14541216.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Testimonio 2"
-                    class="testimonial-img"
-                  />
-                  <div class="testimonial-meta">
-                    <span class="testimonial-name">Elena S.</span>
-                    <div class="stars"><span>★★★★★</span></div>
-                  </div>
-                </div>
-                <p class="section-content">
-                  "El broche frontal es súper práctico y la faja es muy cómoda
-                  para usar todo el día. El envío fue rápido."
-                </p>
-              </div>
-              <div class="home-testimonial-card1">
-                <div class="testimonial-header">
-                  <img
-                    src="https://images.pexels.com/photos/698532/pexels-photo-698532.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
-                    alt="Testimonio 3"
-                    class="testimonial-img"
-                  />
-                  <div class="testimonial-meta">
-                    <span class="testimonial-name">Laura M.</span>
-                    <div class="stars"><span>★★★★★</span></div>
-                  </div>
-                </div>
-                <p class="section-content">
-                  "La mejor inversión. Mis curvas se ven espectaculares y la
-                  calidad de la tela es de primera."
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="home-contact-section">
-          <div class="container">
-            <div class="contact-grid">
-              <div class="contact-info">
-                <h2 class="home-section-title1 section-title">Contáctanos</h2>
-                <p class="home-section-subtitle section-subtitle">
-                  Estamos para asesorarte
-                </p>
-                <div class="contact-list">
-                  <div class="home-contact-item">
-                    <div class="contact-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path
-                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                        ></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                      </svg>
-                    </div>
-                    <div class="contact-text">
-                      <span class="contact-label">Ubicación</span>
-                      <span class="section-content">
-                        Avenida 27 de febrero, reparto Rosa
-                      </span>
-                    </div>
-                  </div>
-                  <div class="home-contact-item">
-                    <div class="contact-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                        <path d="m22 7-8.99 5.727a2 2 0 0 1-2.01 0L2 7"></path>
-                      </svg>
-                    </div>
-                    <div class="contact-text">
-                      <span class="contact-label">Correo</span>
-                      <span class="section-content">
-                        fajasducted.z1234@gmail.com
-                      </span>
-                    </div>
-                  </div>
-                  <div class="home-contact-item">
-                    <div class="contact-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098l-4.759.849l-.11.011a1 1 0 0 1-.11 0l-.102-.013l-.108-.024l-.105-.037l-.099-.047l-.093-.058l-.014-.011l-.012-.007l-.086-.073l-.077-.08l-.067-.088l-.056-.094l-.034-.07l-.04-.108l-.028-.128l-.012-.102a1 1 0 0 1 0-.125l.012-.1l.024-.11l.045-.122l1.433-3.304l-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074l-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023l.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"
-                        ></path>
-                      </svg>
-                    </div>
-                    <div class="contact-text">
-                      <span class="contact-label">Teléfono</span>
-                      <span class="section-content">(809) 765 5525</span>
-                    </div>
-                  </div>
-                </div>
-                <a href="https://wa.me/18097655525">
-                  <div class="btn-whatsapp btn btn-lg">
-                    <div class="icon-inline">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098l-4.759.849l-.11.011a1 1 0 0 1-.11 0l-.102-.013l-.108-.024l-.105-.037l-.099-.047l-.093-.058l-.014-.011l-.012-.007l-.086-.073l-.077-.08l-.067-.088l-.056-.094l-.034-.07l-.04-.108l-.028-.128l-.012-.102a1 1 0 0 1 0-.125l.012-.1l.024-.11l.045-.122l1.433-3.304l-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074l-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023l.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"
-                        ></path>
-                      </svg>
-                    </div>
-                    <span>Chatear por WhatsApp</span>
-                  </div>
-                </a>
-              </div>
-              <div class="contact-map">
-                <div class="map-placeholder">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="64"
-                    height="64"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="var(--color-neutral)"
-                    stroke-width="1"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                    ></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                  <span class="section-content">
-                    Ubicados en Avenida 27 de febrero
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <footer class="main-footer">
-          <div class="container">
-            <div class="home-footer-bottom">
-              <p class="section-content">
-                &amp;copy; 2024 Fajas Ductesa. Todos los derechos reservados.
-              </p>
-            </div>
-          </div>
-        </footer>
-        <div class="home-container23">
-          <div class="home-container24">
-            <style>
-                      @keyframes pulse {0% {box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);}
-              70% {box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);}
-              100% {box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);}}
-            </style>
-          </div>
-        </div>
-        <div class="home-container25">
-          <div class="home-container26">
-            <script>
-              document.addEventListener('DOMContentLoaded', function() {
-                (function(){
-                  const track = document.querySelector(".carousel-track")
-                  const prevBtn = document.getElementById("prevBtn")
-                  const nextBtn = document.getElementById("nextBtn")
-
-                  if (track && prevBtn && nextBtn) {
-                    let scrollPosition = 0
-                    const itemWidth = 300 + 24 // Width + gap
-
-                    nextBtn.addEventListener("click", () => {
-                      const maxScroll = track.scrollWidth - track.parentElement.clientWidth
-                      if (scrollPosition < maxScroll) {
-                        scrollPosition += itemWidth
-                        if (scrollPosition > maxScroll) scrollPosition = maxScroll
-                        track.style.transform = `translateX(-${scrollPosition}px)`
-                      }
-                    })
-
-                    prevBtn.addEventListener("click", () => {
-                      if (scrollPosition > 0) {
-                        scrollPosition -= itemWidth
-                        if (scrollPosition < 0) scrollPosition = 0
-                        track.style.transform = `translateX(-${scrollPosition}px)`
-                      }
-                    })
-                  }
-
-                  // Simple reveal animation on scroll
-                  const observerOptions = {
-                    threshold: 0.1,
-                  }
-
-                  const observer = new IntersectionObserver((entries) => {
-                    entries.forEach((entry) => {
-                      if (entry.isIntersecting) {
-                        entry.target.style.opacity = "1"
-                        entry.target.style.transform = "translateY(0)"
-                      }
-                    })
-                  }, observerOptions)
-
-                  document.querySelectorAll(".testimonial-card, .contact-item").forEach((el) => {
-                    el.style.opacity = "0"
-                    el.style.transform = "translateY(20px)"
-                    el.style.transition = "all 0.6s ease-out"
-                    observer.observe(el)
-                  })
-                })()
-              });
-            </script>
-          </div>
-        </div>
-        <a href="https://play.teleporthq.io/signup">
-          <div aria-label="Sign up to TeleportHQ" class="home-container27">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 19 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="home-icon95"
-            >
-              <path
-                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
-                fill="#B23ADE"
-              ></path>
-              <path
-                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
-                fill="#FF5C5C"
-              ></path>
-              <path
-                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
-                fill="#2874DE"
-              ></path>
-            </svg>
-            
-          </div>
+      </div>
+      <div class="reveal rd2" style="display:flex;flex-direction:column;gap:16px">
+        <p class="contact-quote">"Tu mejor versión está a un mensaje de distancia…"</p>
+        <a href="https://wa.me/18097655525?text=Hola%2C%20quiero%20info%20sobre%20Fajas%20Ductesa" class="btn-wa" style="align-self:flex-start">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098-4.759.849-.11.011a1 1 0 0 1-.11 0l-.102-.013-.108-.024-.105-.037-.099-.047-.093-.058-.014-.011-.012-.007-.086-.073-.077-.08-.067-.088-.056-.094-.034-.07-.04-.108-.028-.128-.012-.102a1 1 0 0 1 0-.125l.012-.1.024-.11.045-.122 1.433-3.304-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"/></svg>
+          Chatear en WhatsApp
         </a>
       </div>
-      <link
-        rel="canonical"
-        href="https://fearless-soggy-scorpion-zhpezs.teleporthq.app/"
-      />
     </div>
-  </body>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-logo">Fajas Ductesa</p>
+  <p>© 2026 Fajas Ductesa · Todos los derechos reservados · <a href="mailto:fajasducted.z1234@gmail.com">fajasducted.z1234@gmail.com</a></p>
+</footer>
+
+<!-- ══ FLOATING ORDER BAR ══ -->
+<div class="order-bar" id="orderBar">
+  <div class="order-bar-left">
+    <span class="order-bar-label">Tu pedido</span>
+    <span class="order-bar-summary" id="orderSummary">Selecciona un producto</span>
+  </div>
+  <span class="order-bar-price" id="orderBarPrice"></span>
+  <a href="#" class="order-bar-btn" id="orderBarBtn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098-4.759.849-.11.011a1 1 0 0 1-.11 0l-.102-.013-.108-.024-.105-.037-.099-.047-.093-.058-.014-.011-.012-.007-.086-.073-.077-.08-.067-.088-.056-.094-.034-.07-.04-.108-.028-.128-.012-.102a1 1 0 0 1 0-.125l.012-.1.024-.11.045-.122 1.433-3.304-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"/></svg>
+    Pedir por WhatsApp
+  </a>
+</div>
+
+<!-- WA FLOAT -->
+<a class="wa-float" href="https://wa.me/18097655525" aria-label="WhatsApp" id="waFloat">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098-4.759.849-.11.011a1 1 0 0 1-.11 0l-.102-.013-.108-.024-.105-.037-.099-.047-.093-.058-.014-.011-.012-.007-.086-.073-.077-.08-.067-.088-.056-.094-.034-.07-.04-.108-.028-.128-.012-.102a1 1 0 0 1 0-.125l.012-.1.024-.11.045-.122 1.433-3.304-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"/></svg>
+</a>
+
+<script>
+/* ════════════════════════════════
+   PRODUCT DATA
+════════════════════════════════ */
+const WA_NUM = '18097655525';
+
+const PRODUCTS = [
+  {
+    id: 'duquesa',
+    name: 'Faja Duquesa',
+    desc: 'Nuestra estrella. Levanta cola pronunciado, broche frontal de 3 columnas y alta compresión abdominal. Perfecta para uso diario y eventos.',
+    badge: '⭐ Más Vendida',
+    badgeClass: 'gold-badge',
+    img: 'https://images.pexels.com/photos/5608416/pexels-photo-5608416.jpeg?auto=compress&cs=tinysrgb&w=600',
+    prices: { XS: 1800, S: 1800, M: 2000, L: 2000, XL: 2200, '2XL': 2200, '3XL': 2500 },
+    oldPrice: 2800,
+    sizes: ['XS','S','M','L','XL','2XL','3XL'],
+    outOfStock: []
+  },
+  {
+    id: 'reina',
+    name: 'Faja Reina',
+    desc: 'Diseño strapless ideal para vestidos de fiesta. Compresión media-alta con efecto moldeador en cintura y caderas. Comodidad garantizada.',
+    badge: '✨ Nueva',
+    badgeClass: '',
+    img: 'https://images.pexels.com/photos/13816060/pexels-photo-13816060.jpeg?auto=compress&cs=tinysrgb&w=600',
+    prices: { XS: 1500, S: 1500, M: 1700, L: 1700, XL: 1900, '2XL': 1900, '3XL': 2200 },
+    oldPrice: null,
+    sizes: ['XS','S','M','L','XL','2XL','3XL'],
+    outOfStock: []
+  },
+  {
+    id: 'princesa',
+    name: 'Faja Princesa',
+    desc: 'Control total de abdomen, cintura y muslos. Tela microfibra suave con tecnología anti-roll. Invisible bajo ropa ajustada.',
+    badge: '🔥 Oferta',
+    badgeClass: 'sale-badge',
+    img: 'https://images.pexels.com/photos/6542043/pexels-photo-6542043.jpeg?auto=compress&cs=tinysrgb&w=600',
+    prices: { XS: 1600, S: 1600, M: 1800, L: 1800, XL: 2000, '2XL': 2000, '3XL': 2300 },
+    oldPrice: 2400,
+    sizes: ['XS','S','M','L','XL','2XL','3XL'],
+    outOfStock: ['2XL','3XL']
+  },
+  {
+    id: 'emperatriz',
+    name: 'Faja Emperatriz',
+    desc: 'Nuestra faja premium postparto y postoperatoria. Máxima compresión con varillas de soporte y triple cierre. Resultados visibles en 4 semanas.',
+    badge: '💎 Premium',
+    badgeClass: 'gold-badge',
+    img: 'https://images.pexels.com/photos/5311788/pexels-photo-5311788.jpeg?auto=compress&cs=tinysrgb&w=600',
+    prices: { XS: 2200, S: 2200, M: 2500, L: 2500, XL: 2800, '2XL': 2800, '3XL': 3200 },
+    oldPrice: 3800,
+    sizes: ['XS','S','M','L','XL','2XL','3XL'],
+    outOfStock: []
+  }
+];
+
+/* ════════════════════════════════
+   ORDER STATE
+════════════════════════════════ */
+const order = { productId: null, size: null, qty: 1, price: 0, name: '' };
+
+function fmtPrice(n){ return 'RD$' + n.toLocaleString('es-DO'); }
+
+function updateOrderBar() {
+  const bar = document.getElementById('orderBar');
+  const summary = document.getElementById('orderSummary');
+  const barPrice = document.getElementById('orderBarPrice');
+  const btn = document.getElementById('orderBarBtn');
+
+  if (!order.productId || !order.size) {
+    bar.classList.remove('show');
+    document.getElementById('waFloat').style.bottom = '26px';
+    return;
+  }
+
+  const total = order.price * order.qty;
+  const text = `${order.name} – Talla ${order.size}${order.qty > 1 ? ' × ' + order.qty : ''}`;
+  summary.textContent = text;
+  barPrice.textContent = fmtPrice(total);
+
+  const msg = encodeURIComponent(`Hola! Quiero pedir:\n${order.name} – Talla ${order.size} × ${order.qty}\nTotal: ${fmtPrice(total)}`);
+  btn.href = `https://wa.me/${WA_NUM}?text=${msg}`;
+
+  bar.classList.add('show');
+  document.getElementById('waFloat').style.bottom = '90px';
+}
+
+/* ════════════════════════════════
+   BUILD CATALOG CARDS
+════════════════════════════════ */
+function buildCatalog() {
+  const grid = document.getElementById('catGrid');
+  grid.innerHTML = '';
+
+  PRODUCTS.forEach((p, pi) => {
+    const defaultSize = p.sizes.find(s => !p.outOfStock.includes(s)) || p.sizes[0];
+    const defaultPrice = p.prices[defaultSize];
+
+    const card = document.createElement('div');
+    card.className = 'prod-card';
+    card.style.transitionDelay = (pi * 0.12) + 's';
+
+    card.innerHTML = `
+      <div class="prod-img-wrap">
+        <img src="${p.img}" alt="${p.name}" loading="lazy"/>
+        <span class="prod-badge ${p.badgeClass}">${p.badge}</span>
+      </div>
+      <div class="prod-body">
+        <div class="prod-name">${p.name}</div>
+        <div class="prod-desc">${p.desc}</div>
+
+        <div class="prod-price-row">
+          <span class="prod-price" id="price-${p.id}">${fmtPrice(defaultPrice)}</span>
+          ${p.oldPrice ? `<span class="prod-price-old">${fmtPrice(p.oldPrice)}</span><span class="prod-savings">Ahorra ${fmtPrice(p.oldPrice - defaultPrice)}</span>` : ''}
+        </div>
+
+        <div>
+          <div class="prod-sizes-label">Talla</div>
+          <div class="prod-sizes" id="sizes-${p.id}">
+            ${p.sizes.map(s => `
+              <button class="size-btn ${s === defaultSize ? 'selected' : ''} ${p.outOfStock.includes(s) ? 'out' : ''}"
+                data-product="${p.id}" data-size="${s}" data-price="${p.prices[s]}"
+                onclick="selectSize(this,'${p.id}','${s}',${p.prices[s]},'${p.name}')">
+                ${s}
+              </button>`).join('')}
+          </div>
+        </div>
+
+        <div class="qty-row">
+          <span class="qty-label">Cantidad</span>
+          <div class="qty-ctrl">
+            <button class="qty-btn" onclick="changeQty('${p.id}',-1)">−</button>
+            <span class="qty-num" id="qty-${p.id}">1</span>
+            <button class="qty-btn" onclick="changeQty('${p.id}',1)">+</button>
+          </div>
+        </div>
+
+        <button class="prod-order-btn" id="orderBtn-${p.id}" onclick="orderProduct('${p.id}','${p.name}')">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098-4.759.849-.11.011a1 1 0 0 1-.11 0l-.102-.013-.108-.024-.105-.037-.099-.047-.093-.058-.014-.011-.012-.007-.086-.073-.077-.08-.067-.088-.056-.094-.034-.07-.04-.108-.028-.128-.012-.102a1 1 0 0 1 0-.125l.012-.1.024-.11.045-.122 1.433-3.304-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"/></svg>
+          Pedir: ${p.name} – Talla ${defaultSize} – ${fmtPrice(defaultPrice)}
+        </button>
+      </div>
+    `;
+
+    // store current selection per card
+    card.dataset.selectedSize = defaultSize;
+    card.dataset.selectedPrice = defaultPrice;
+    card.dataset.qty = 1;
+    grid.appendChild(card);
+  });
+
+  // Trigger reveal observer
+  grid.querySelectorAll('.prod-card').forEach(el => revealObs.observe(el));
+}
+
+function selectSize(btn, productId, size, price, productName) {
+  // Update buttons
+  document.querySelectorAll(`#sizes-${productId} .size-btn`).forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+
+  // Update price display
+  document.getElementById(`price-${productId}`).textContent = fmtPrice(price);
+
+  // Store on card
+  const card = btn.closest('.prod-card');
+  card.dataset.selectedSize = size;
+  card.dataset.selectedPrice = price;
+  const qty = parseInt(card.dataset.qty) || 1;
+
+  // Update order button text
+  const orderBtn = document.getElementById(`orderBtn-${productId}`);
+  orderBtn.innerHTML = `
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098-4.759.849-.11.011a1 1 0 0 1-.11 0l-.102-.013-.108-.024-.105-.037-.099-.047-.093-.058-.014-.011-.012-.007-.086-.073-.077-.08-.067-.088-.056-.094-.034-.07-.04-.108-.028-.128-.012-.102a1 1 0 0 1 0-.125l.012-.1.024-.11.045-.122 1.433-3.304-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"/></svg>
+    Pedir: ${productName} – Talla ${size} – ${fmtPrice(price * qty)}
+  `;
+
+  // If this is the active order product, update bar
+  if (order.productId === productId) {
+    order.size = size; order.price = price; order.qty = qty;
+    updateOrderBar();
+  }
+}
+
+function changeQty(productId, delta) {
+  const card = document.querySelector(`[data-product-card="${productId}"]`) ||
+    document.getElementById(`orderBtn-${productId}`).closest('.prod-card');
+  let qty = parseInt(card.dataset.qty) || 1;
+  qty = Math.max(1, Math.min(10, qty + delta));
+  card.dataset.qty = qty;
+  document.getElementById(`qty-${productId}`).textContent = qty;
+
+  const price = parseInt(card.dataset.selectedPrice) || 0;
+  const size = card.dataset.selectedSize || '';
+  const prod = PRODUCTS.find(p => p.id === productId);
+  if (!prod) return;
+
+  const orderBtn = document.getElementById(`orderBtn-${productId}`);
+  orderBtn.innerHTML = `
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.497 4.409a10 10 0 0 1-10.36 16.828l-.223-.098-4.759.849-.11.011a1 1 0 0 1-.11 0l-.102-.013-.108-.024-.105-.037-.099-.047-.093-.058-.014-.011-.012-.007-.086-.073-.077-.08-.067-.088-.056-.094-.034-.07-.04-.108-.028-.128-.012-.102a1 1 0 0 1 0-.125l.012-.1.024-.11.045-.122 1.433-3.304-.009-.014A10 10 0 0 1 5.056 4.83l.215-.203a10 10 0 0 1 13.226-.217M9.5 7.5A1.5 1.5 0 0 0 8 9v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0-3h-1l-.144.007a1.5 1.5 0 0 0-1.128.697l-.042.074-.022-.007a4.01 4.01 0 0 1-2.435-2.435l-.008-.023.075-.041A1.5 1.5 0 0 0 11 10V9a1.5 1.5 0 0 0-1.5-1.5"/></svg>
+    Pedir: ${prod.name} – Talla ${size}${qty > 1 ? ' × '+qty : ''} – ${fmtPrice(price * qty)}
+  `;
+
+  if (order.productId === productId) {
+    order.qty = qty; updateOrderBar();
+  }
+}
+
+function orderProduct(productId, productName) {
+  const card = document.getElementById(`orderBtn-${productId}`).closest('.prod-card');
+  const size = card.dataset.selectedSize;
+  const price = parseInt(card.dataset.selectedPrice);
+  const qty = parseInt(card.dataset.qty) || 1;
+
+  // Set as active order
+  order.productId = productId;
+  order.name = productName;
+  order.size = size;
+  order.price = price;
+  order.qty = qty;
+  updateOrderBar();
+
+  // Build WA link
+  const total = price * qty;
+  const msg = encodeURIComponent(`Hola! Quiero pedir:\n✨ ${productName}\n📏 Talla: ${size}\n🔢 Cantidad: ${qty}\n💰 Total: ${fmtPrice(total)}\n\n¿Está disponible?`);
+  window.open(`https://wa.me/${WA_NUM}?text=${msg}`, '_blank');
+}
+
+/* ════════════════════════════════
+   NAVBAR
+════════════════════════════════ */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) { navbar.classList.add('scrolled'); navbar.classList.remove('dark-mode'); }
+  else { navbar.classList.remove('scrolled'); navbar.classList.add('dark-mode'); }
+});
+
+/* ════════════════════════════════
+   MOBILE MENU
+════════════════════════════════ */
+const mdrawer = document.getElementById('mdrawer');
+document.getElementById('navToggle').addEventListener('click', () => mdrawer.classList.add('open'));
+document.getElementById('mclose').addEventListener('click', () => mdrawer.classList.remove('open'));
+document.getElementById('mback').addEventListener('click', () => mdrawer.classList.remove('open'));
+mdrawer.querySelectorAll('.mlink').forEach(l => l.addEventListener('click', () => mdrawer.classList.remove('open')));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') mdrawer.classList.remove('open'); });
+
+/* ════════════════════════════════
+   CAROUSEL
+════════════════════════════════ */
+(function(){
+  const track = document.getElementById('carTrack');
+  const dotsWrap = document.getElementById('carDots');
+  const slides = track.querySelectorAll('.car-slide');
+  let cur = 0;
+
+  function visCount(){ return window.innerWidth <= 500 ? 1 : window.innerWidth <= 768 ? 2 : 3; }
+  function maxIdx(){ return slides.length - visCount(); }
+
+  function buildDots(){
+    dotsWrap.innerHTML = '';
+    for (let i = 0; i <= maxIdx(); i++){
+      const d = document.createElement('button');
+      d.className = 'car-dot' + (i === cur ? ' active' : '');
+      d.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(d);
+    }
+  }
+  function updateDots(){ dotsWrap.querySelectorAll('.car-dot').forEach((d,i) => d.classList.toggle('active', i === cur)); }
+  function goTo(i){
+    cur = Math.max(0, Math.min(i, maxIdx()));
+    track.style.transform = `translateX(-${cur * (slides[0].offsetWidth + 18)}px)`;
+    updateDots();
+  }
+
+  document.getElementById('cPrev').addEventListener('click', () => goTo(cur - 1));
+  document.getElementById('cNext').addEventListener('click', () => goTo(cur + 1));
+
+  let sx = 0;
+  track.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    const dx = sx - e.changedTouches[0].clientX;
+    if (Math.abs(dx) > 40) goTo(dx > 0 ? cur + 1 : cur - 1);
+  });
+
+  let ap = setInterval(() => goTo(cur < maxIdx() ? cur + 1 : 0), 4500);
+  track.addEventListener('mouseenter', () => clearInterval(ap));
+  track.addEventListener('mouseleave', () => { ap = setInterval(() => goTo(cur < maxIdx() ? cur + 1 : 0), 4500); });
+
+  buildDots();
+  window.addEventListener('resize', () => { buildDots(); goTo(0); });
+})();
+
+/* ════════════════════════════════
+   SCROLL REVEAL
+════════════════════════════════ */
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('vis'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal,.bc,.tc').forEach(el => revealObs.observe(el));
+
+/* ════════════════════════════════
+   INIT
+════════════════════════════════ */
+buildCatalog();
+</script>
+</body>
 </html>
